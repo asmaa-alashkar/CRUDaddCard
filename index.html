@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <!-- image, title, paragraph, edit and delete buttons -->
+    <div class="container">
+        <h1 class="text-center m-3">Your Courses</h1>
+        <form action="">
+            <div class="row g-2">
+                <div class="form-floating mb-3 col-6">
+                    <input type="text" class="form-control" id="courseTitle" placeholder="Enter Your Title">
+                    <label for="courseTitle">Title</label>
+                </div>
+                <div class="form-floating mb-3 col-6">
+                    <input type="text" class="form-control" id="courseImage" placeholder="Enter Your Title">
+                    <label for="courseImage">Image URL</label>
+                </div>
+            </div>
+            
+            <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="courseDescription" style="height: 100px"></textarea>
+                <label for="courseDescription">Description</label>
+            </div>
+            <button id="submitBtn" type="submit" class="btn btn-primary w-100">Create</button>
+            <button id="deleteBtn" type="submit" class="btn btn-danger w-100 mt-3">Delete All</button>
+
+        </form>
+        <div id="courses" class="row p-5 d-flex justify-content-around"></div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
